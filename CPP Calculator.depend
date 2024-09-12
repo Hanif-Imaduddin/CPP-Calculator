@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1726149553 source:d:\hanif imaduddin\github\cpp calculator\main.cpp
+	<iostream>
+	"Entity/data_structures.h"
+
+1726149445 d:\hanif imaduddin\github\cpp calculator\entity\data_structures.h
+
