@@ -46,6 +46,18 @@ int Stack::pop(){
     }
 }
 
+int Stack::getTopData(){
+    if (this->tail != nullptr){
+        return this->tail->data;
+    }else{
+        return -999;
+    }
+}
+
+bool Stack::isEmpty(){
+    return this->head == nullptr;
+}
+
 Queue::Queue() : head(nullptr),tail(nullptr),length(0){}
 
 void Queue::enqueue(int data){
@@ -76,6 +88,10 @@ int Queue::dequeue(){
         this->head = temp;
         return data;
     }
+}
+
+bool Queue::isEmpty(){
+    return this->head == nullptr;
 }
 
 

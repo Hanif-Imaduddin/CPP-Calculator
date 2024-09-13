@@ -15,6 +15,8 @@ public:
     Stack();
     void push(int);
     int pop();
+    int getTopData();
+    bool isEmpty();
 };
 
 class Queue{
@@ -24,10 +26,9 @@ private:
 public:
     int length;
     Queue();
-
     void enqueue(int);
-
     int dequeue();
+    bool isEmpty();
 };
 
 #endif // DATASTRUCTURES_H
