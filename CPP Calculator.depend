@@ -1,7 +1,33 @@
 # depslib dependency file v1.0
-1726150699 source:d:\hanif imaduddin\github\cpp calculator\main.cpp
+1726288697 source:d:\hanif imaduddin\github\cpp calculator\main.cpp
 	<iostream>
 	"Entity/data_structures.h"
+	"Include/core_functions.h"
+	"Include/test_function.h"
 
-1726150459 d:\hanif imaduddin\github\cpp calculator\entity\data_structures.h
+1726235328 d:\hanif imaduddin\github\cpp calculator\entity\data_structures.h
+
+1726235397 source:d:\hanif imaduddin\github\cpp calculator\entity\data_structures.cpp
+	"data_structures.h"
+	<iostream>
+
+1726288953 source:d:\hanif imaduddin\github\cpp calculator\core\core_functions.cpp
+	"../Include/core_functions.h"
+	"../Entity/data_structures.h"
+	<iostream>
+
+1726288138 d:\hanif imaduddin\github\cpp calculator\include\core_functions.h
+	"../Entity/data_structures.h"
+	<iostream>
+
+1726287916 d:\hanif imaduddin\github\cpp calculator\include\test_function.h
+	<iostream>
+	"../Entity/data_structures.h"
+	"core_functions.h"
+
+1726288217 source:d:\hanif imaduddin\github\cpp calculator\test\test_function.cpp
+	"../Include/test_function.h"
+	"../Entity/data_structures.h"
+	"../Include/core_functions.h"
+	<iostream>
 

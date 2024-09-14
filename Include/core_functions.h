@@ -4,9 +4,9 @@
 #include <iostream>
 
 using namespace std;
-bool isNumber(char)
+bool isNumber(char);
 string removeWhiteSpace(string);
-Queue encodePostfix(string);
+Queue encodeInfix(string);
 int getPriority(int);
 Queue infixToPostfix(Queue);
 #endif // CORE_FUNCTIONS_H_INCLUDED
