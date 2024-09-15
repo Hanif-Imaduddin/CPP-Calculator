@@ -10,7 +10,7 @@ int main()
     Queue infix_encoded = encodeInfix(infix);
     Queue postfix = infixToPostfix(infix_encoded);
     cout<<infix<<endl;
-    printlnQueue(postfix);
-
+    float result = calculate(postfix);
+    cout<<result<<endl;
     return 0;
 }

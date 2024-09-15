@@ -1,6 +1,7 @@
 #include "../Include/core_functions.h"
 #include "../Entity/data_structures.h"
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -119,6 +120,40 @@ Queue infixToPostfix(Queue infix){
         postfix.enqueue(signs.pop());
     }
     return postfix;
+}
+
+float calculate(Queue postfix){
+    StackOfFloat temp;
+    float data,num1,num2;
+    while (!postfix.isEmpty()){
+        data = float(postfix.dequeue());
+        if (data >= 0){
+            temp.push(data);
+        }else if (data == -3){
+            temp.push(temp.pop()*-1);
+        }else if (data == -4){
+            num1 = temp.pop();
+            num2 = temp.pop();
+            temp.push(pow(num1,num2));
+        }else if (data == -5){
+            num1 = temp.pop();
+            num2 = temp.pop();
+            temp.push(num2*num1);
+        }else if (data == -6){
+            num1 = temp.pop();
+            num2 = temp.pop();
+            temp.push(num2/num1);
+        }else if (data == -7){
+            num1 = temp.pop();
+            num2 = temp.pop();
+            temp.push(num2+num1);
+        }else if (data == -8){
+            num1 = temp.pop();
+            num2 = temp.pop();
+            temp.push(num2-num1);
+        }
+    }
+    return temp.pop();
 }
 
 

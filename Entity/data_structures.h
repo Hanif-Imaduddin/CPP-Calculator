@@ -6,6 +6,11 @@ struct Node{
 	Node *next;
 };
 
+struct NodeOfFloat{
+    float data;
+    NodeOfFloat *next;
+};
+
 class Stack{
 private:
     Node *head;
@@ -16,6 +21,19 @@ public:
     void push(int);
     int pop();
     int getTopData();
+    bool isEmpty();
+};
+
+class StackOfFloat{
+private:
+    NodeOfFloat *head;
+    NodeOfFloat *tail;
+public:
+    int length;
+    StackOfFloat();
+    void push(float);
+    float pop();
+    float getTopData();
     bool isEmpty();
 };
 

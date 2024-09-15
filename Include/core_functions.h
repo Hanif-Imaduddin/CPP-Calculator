@@ -9,4 +9,6 @@ string removeWhiteSpace(string);
 Queue encodeInfix(string);
 int getPriority(int);
 Queue infixToPostfix(Queue);
+
+float calculate(Queue);
 #endif // CORE_FUNCTIONS_H_INCLUDED
